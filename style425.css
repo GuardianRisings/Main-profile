@@ -1,4 +1,4 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1024px) {
     header {
       padding: 16px ;
     }
@@ -100,13 +100,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
     }
     /* css about-me */
     #about-me {
-    padding: 16px ;
+    padding: 6px ;
     display: flex;
-    gap: 16px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     background: #f2f2fe;
@@ -114,7 +114,7 @@
     }
     .about-me__content{
     flex: 2;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     }
     .about-me__content h2 {
     display: flex;
@@ -171,7 +171,7 @@
     justify-content: center;
     }
     .about-me__content--social-network img {
-    width: 60px;
+    width: 50px;
     height: auto;
     color: #637381;
     }
@@ -221,7 +221,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 12px;
     margin-top: 32px;
     }
     
