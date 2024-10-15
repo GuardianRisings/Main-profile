@@ -17,3 +17,4 @@ const textAnim = (id, text, index = 0) => {
 };
 // element animation 
 textAnim("text_Anim", "Thousands of candles can be lighted from a single candle, And the life of the candle will not be shortened. Happiness never decreases by being shared.");
+

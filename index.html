@@ -7,32 +7,39 @@
   <title>Henry's Portfolio</title>
   <link rel="icon" href="https://static-00.iconduck.com/assets.00/incognito-circle-icon-256x256-ozj8a2m2.png">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style425.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="container-btn.css">
+  <link rel="stylesheet" href="creative-works-card.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script>
+    const playChess = () => {
+      window.open("https://link.chess.com/play/56UZMf");
+    }
+  </script>
 </head>
 
 <body>
   <header id="header">
     <div class="header-container__left">
-      <img class="header-container__left--logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnB0r-GEuAr_NZUBJmtG3NgZPXl3wkU6Chtw&s" alt="logo wellspring" />
+      <img class="header-container__left--logo"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnB0r-GEuAr_NZUBJmtG3NgZPXl3wkU6Chtw&s"
+        alt="logo wellspring" />
       <div class="header-container__left--name">Trần Lê Việt Anh/Henry</div>
     </div>
     <div class="header-container__right">
-      <nav >
+      <nav>
         <ul class="list">
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#achievements">Acadedmics</a></li>
-            <li><a href="#my-preferences">Favored Activities</a></li>
-            <li><a href="#creative-works">Creative Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#achievements">Acadedmics</a></li>
+          <li><a href="#my-preferences">Favored Activities</a></li>
+          <li><a href="#creative-works">Creative Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -42,18 +49,28 @@
   <!-- section intro -->
 
   <section id="intro">
+    <div id="particles-js"></div>
+
     <div class="intro__content">
       <h2 class="intro__content-greeting">XIN CHAO, I'M</h2>
       <h1 class="intro__content-title">Henry</h1>
       <span class="intro__content-subtitle" id="text_Anim"></span>
 
-      <a class="intro__content-button-contact-me" href="https://link.chess.com/play/56UZMf" target="_blank">CHESS DUEL?<i class="fa-solid fa-arrow-right"
-          style="color: #ffffff"></i></a>
+      <a class="container-button intro__content-button-play-chess" href="https://link.chess.com/play/56UZMf"
+        target="_blank">
+        <div class="hover bt-1"></div>
+        <div class="hover bt-2"></div>
+        <div class="hover bt-3"></div>
+        <div class="hover bt-4"></div>
+        <div class="hover bt-5"></div>
+        <div class="hover bt-6"></div>
+        <button id="button-play-chess" onclick="playChess()"></button>
+      </a>
     </div>
 
 
-    <div class="intro__image animate__animated animate__slideInRight">
-      <img src="https://firebasestorage.googleapis.com/v0/b/self-c63b2.appspot.com/o/WS21806002%20%20Tran%20Le%20Viet%20Anh.jpg?alt=media&token=cf96f27a-5373-4c43-b276-92af4d4d0e9e" alt="Hình cá nhân" />
+    <div class="intro__image animate__animated animate__slideInLeft">
+      <img src="/images/viet-anh.png" alt="Hình cá nhân" />
     </div>
   </section>
 
@@ -61,7 +78,9 @@
 
   <section id="about-me">
     <div class="about-me__image">
-      <img src="https://firebasestorage.googleapis.com/v0/b/self-c63b2.appspot.com/o/456048857_8251041485010500_1397263613850664654_n.jpg?alt=media&token=9e99d8bb-115a-4a6d-ae49-f9255a135c8f" alt="Hình cá nhân" />
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/self-c63b2.appspot.com/o/456048857_8251041485010500_1397263613850664654_n.jpg?alt=media&token=9e99d8bb-115a-4a6d-ae49-f9255a135c8f"
+        alt="Hình cá nhân" />
     </div>
     <div class="about-me__content">
       <h2 class="about-me__content--title">
@@ -69,7 +88,12 @@
         <span class="about-me__content--title-text-2">me</span>
       </h2>
       <p class="about-me__content--description">
-        I was raised in a Middle-class home within a relatively big family, yet I was born the latest. I really do enjoy Running and Deepening myself in thought among the greens of my neighborhood. Besides my physically active lifestyle, I also love learning how things work and exploring myself, thus I can spend hours of my leisure time to watch documentaries or working on something(I tried replicating the surrounding diversity through building terrariums or fixing the electronics inside my room). My dream is to pursue education in US as an Electrical Engineer.
+        I was raised in a Middle-class home within a relatively big family, yet I was born the latest. I really do enjoy
+        Running and Deepening myself in thought among the greens of my neighborhood. Besides my physically active
+        lifestyle, I also love learning how things work and exploring myself, thus I can spend hours of my leisure time
+        to watch documentaries or working on something(I tried replicating the surrounding diversity through building
+        terrariums or fixing the electronics inside my room). My dream is to pursue education in US as an Electrical
+        Engineer.
       </p>
       <div class="about-me__content--info">
         <!-- Date of Birth  -->
@@ -85,7 +109,7 @@
         <!-- Email -->
         <div class="about-me__content--info-item">
           <span>For business contact me</span>
-          <b> henry.levietanh@gmai.com </b>
+          <b> henry.levietanh@gmail.com </b>
         </div>
         <!-- Address -->
         <div class="about-me__content--info-item">
@@ -96,9 +120,9 @@
       <div class="about-me__content--social-network">
         <!-- Tìm kiếm icon ở đây https://fontawesome.com/search -->
         <a href="https://www.facebook.com/levietanh.tran.5" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/3670/3670124.png" width = "32" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/512/3670/3670124.png" width="32" alt="">
         </a>
-        <a href="https://discord.gg/hz9gRpAH" target="_blank">  
+        <a href="https://discord.gg/hz9gRpAH" target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/128/2626/2626288.png" width="32" alt="">
         </a>
         <a href="https://www.instagram.com/vladmerzelenskeee/" target="_blank">
@@ -156,16 +180,24 @@
       </div>
       <h2 class="my-preferences__content--title">Running, Calisthenic, Terrarium, Reading</h2>
       <p class="my-preferences__content--description">
-        I find running extraodinary as it is the medication to my mind after a long day. A hard afterschool workout would drain me but a nice run with regulated pace, breathe, and hearbeat always make me well. The famous philosopher
+        I find running extraodinary as it is the medication to my mind after a long day. A hard afterschool workout
+        would drain me but a nice run with regulated pace, breathe, and hearbeat always make me well. The famous
+        philosopher
       </p>
       <p class="my-preferences__content--description">
-        Calisthenic for me is not just various functional workouts, but it's a way of living as close to our ancestors as possible. Different motions that naturally target numerous muscles and body weighted workouts would help me in the long turn more than the bodybuilding approach which targets muscles mass.
+        Calisthenic for me is not just various functional workouts, but it's a way of living as close to our ancestors
+        as possible. Different motions that naturally target numerous muscles and body weighted workouts would help me
+        in the long turn more than the bodybuilding approach which targets muscles mass.
       </p>
       <p class="my-preferences__content--description">
-        The totality of a system always graps my attention when it comes our diverse surroundings. I have always been amazed by the beauty and functionality of Nature and its different composing elements. A terrarium either big or small reminds me of the affectionate of nature and my passion in looking for Life's answers in that diversity.
+        The totality of a system always graps my attention when it comes our diverse surroundings. I have always been
+        amazed by the beauty and functionality of Nature and its different composing elements. A terrarium either big or
+        small reminds me of the affectionate of nature and my passion in looking for Life's answers in that diversity.
       </p>
       <p class="my-preferences__content--description">
-        Reading is one those skills that I find it mandatory in life. At least 20 minutes a day I would negotiate to myself to go read something. It does not even matter what I read: on the browsers or books, the intriguing power of literature and words and knowledge through every context and story.
+        Reading is one those skills that I find it mandatory in life. At least 20 minutes a day I would negotiate to
+        myself to go read something. It does not even matter what I read: on the browsers or books, the intriguing power
+        of literature and words and knowledge through every context and story.
       </p>
     </div>
 
@@ -177,44 +209,39 @@
       Creative Pieces
     </div>
     <h2 class="creative-works--title">Arts</h2>
-    <div class="creative-works--art-portfolio">
-      <div class="creative-works--art-portfolio-item">
-        <img src="images/Ter.jpg" alt="" />
-        <!-- date -->
-        <div class="creative-works--art-portfolio-item-date">
-          20/07/2024
-        </div>
-        <!-- name -->
-        <div class="creative-works--art-portfolio-item-name">
-          Terrarium
-        </div>
-        <!-- description -->
-        <div class="creative-works--art-portfolio-item-description">
-          A small living world in a jar.
-        </div>
-      </div>
-      <div class="creative-works--art-portfolio-item">
-        <img src="images/Automobile.jpg" alt="" />
-        <!-- date -->
-        <div class="creative-works--art-portfolio-item-date">
-          28/06/2024
-        </div>
-        <!-- name -->
-        <div class="creative-works--art-portfolio-item-name">
-          Controlled-Automobile
-        </div>
-        <!-- description -->
-        <div class="creative-works--art-portfolio-item-description">
-          This piece of engineer was created after tireless hours of sitting down with my teammates and our mentor (It was on a field trip).
-        </div>
-      </div>
-    </div>
-    <div class="creative-works--description">
-      If you'd like to talk or just chat about our shared interests.
-      <br>
-      I'm always open to converse with anyone!
-    </div>
 
+    <div class="creative-works-card">
+      <a class="card" href="#" target="_blank">
+        <h2>Terrarium
+        </h2>
+        <div class="card__content">
+          <p class="card__title">Terrarium</p>
+          <p class="card__description"> A small living world in a jar.</p>
+        </div>
+      </a>
+      <a class="card" href="#" target="_blank">
+        <h2>Controlled-Automobile
+        </h2>
+        <div class="card__content">
+          <p class="card__title">Controlled-Automobile</p>
+          <p class="card__description"> This piece of engineer was created after tireless hours of sitting down with my
+            teammates and our mentor (It was on a field trip).</p>
+        </div>
+      </a>
+      <a class="card" href="#" target="_blank">
+        <h2>STEAM LAB
+        </h2>
+        <div class="card__content">
+          <p class="card__title">STEAM LAB</p>
+          <p class="card__description"> STEAM LAB is a dynamic Learning Management System designed specifically for
+            elementary students & teachers to explore and engage with the diverse subjects of STEM. With a fun,
+            interactive, and age-appropriate approach, STEAM LAB aims to inspire the next generation of young innovators
+            and critical thinkers.
+          </p>
+        </div>
+      </a>
+
+    </div>
   </section>
 
   <!-- Contact -->
@@ -238,13 +265,30 @@
       </div>
     </div>
     <div class="footer__copy-right">
-      Copyright © 2023 All Rights Reserved. Made by yourname
+      Copyright © 2023 All Rights Reserved. Made by Tran Le Viet Anh
     </div>
   </footer>
 
+  <section class="sticky">
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      
+    </div>
+  </section>
   <!-- add font awesome icon library -->
   <script src="https://kit.fontawesome.com/d2ae662ec5.js" crossorigin="anonymous"></script>
   <script src="main.js"></script>
+  <script src="particles.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
