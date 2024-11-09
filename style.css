@@ -5,17 +5,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
+
 }
 html {
   scroll-behavior: smooth;
 }
 body{
-  background: linear-gradient(180deg, #fff 100vh, #8793ff 200vh, #2b41c0 300vh, #1f3ad0 400vh);
+  background: linear-gradient(180deg, #fff 100vh, #8793ff 200vh, #2b41c0 300vh, #1f3ad0 400vh, #fff 530vh,  #fff 700vh);
 }
 img {
   border-radius: 16px;
 }
-a{
+*{
   z-index: 12312312;
 }
 /* css header */
@@ -30,7 +31,7 @@ header {
     0px 12px 24px -4px rgba(145, 158, 171, 0.12);
   position: sticky;
   top: 0;
-  z-index: 100000;
+  z-index: 12312313;
 }
 
 .header-container__left {
@@ -70,8 +71,8 @@ ul.list li:hover {
 }
 
 .header-container__left--logo {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 8px;
 }
@@ -116,6 +117,13 @@ ul.list li:hover {
   align-items: center;
   gap: 6vmin;
   position: relative;
+}
+.intro_robot {
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 300px;
 }
 
 #particles-js {
@@ -186,7 +194,14 @@ ul.list li:hover {
   padding: 85px 110px;
   justify-content: center;
   align-items: center;
+  position: relative;
   /* background: linear-gradient(180deg, #fff 0%, #8f6be3 100%); */
+}
+.about-me_chip {
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .about-me__content {
   flex: 2;
@@ -205,7 +220,7 @@ ul.list li:hover {
   color: #fca61e;
 }
 .about-me__content--description {
-  color: #637381;
+  color: #06080b;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -224,7 +239,7 @@ ul.list li:hover {
   align-items: center;
 }
 .about-me__content--info-item span {
-  color: #637381;
+  color: #052b4d;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -397,8 +412,25 @@ ul.list li:hover {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  position: relative;
   /* background: linear-gradient(180deg, #6f34fe 40%, #fff 100%); */
 }
+.creative-works_4d {
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+}
+
+.creative-works_painting {
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 300px;
+}
+
 .creative-works--intro {
   color: #6f34fe;
   font-size: 24px;
@@ -429,6 +461,7 @@ ul.list li:hover {
 .creative-works-card {
   display: flex;
   margin-bottom: auto;
+  z-index: 100000;
 }
 
 .creative-works--art-portfolio-item img {
@@ -579,7 +612,7 @@ ul.list li:hover {
 .footer {
   position: relative;
   width: 100%;
-  background: #133E87;
+  background: #4c83f6;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -601,7 +634,8 @@ ul.list li:hover {
 
 .social-icon__item,
 .menu__item {
-  list-style: none;
+  list-style: none; 
+  z-index: 1000000;
 }
 
 .social-icon__link {
